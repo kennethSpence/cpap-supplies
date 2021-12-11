@@ -2,29 +2,31 @@ import { Card, Container, Button, Col, Row } from "react-bootstrap";
 
 const Home = () => {
   return (
-    <Container fluid>
+    <Container style={{paddingTop:'20px'}}>
       <Row>
         <Col>
-          <Card>
+          <Card border="primary">
+            <Card.Header >Featured</Card.Header>
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
+              <Card.Title>Special title treatment</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                With supporting text below as a natural lead-in to additional
+                content.
               </Card.Text>
               <Button variant="primary">Go somewhere</Button>
             </Card.Body>
           </Card>
         </Col>
         <Col>
-          <Card>
+          <Card border="primary" bg={'secondary'} text={'light'}>
+            <Card.Header>Featured</Card.Header>
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
+              <Card.Title>Special title treatment</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                With supporting text below as a natural lead-in to additional
+                content.
               </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Button variant="secondary">Go somewhere</Button>
             </Card.Body>
           </Card>
         </Col>
