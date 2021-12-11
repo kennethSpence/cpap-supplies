@@ -1,7 +1,6 @@
-import { Container, Row, Col, Navbar, Nav } from "react-bootstrap";
+import { Container, Navbar, Nav } from "react-bootstrap";
 import UserInfo from "./UserInfo";
 
-const logo = "./logo.jpg";
 
 const Header = () => {
   return (
