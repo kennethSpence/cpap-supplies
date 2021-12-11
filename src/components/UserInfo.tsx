@@ -1,5 +1,3 @@
-import { Container } from "react-bootstrap";
-
 const UserInfo = () => {
   return (
     <div>
