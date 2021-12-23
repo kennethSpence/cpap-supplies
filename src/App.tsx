@@ -1,10 +1,10 @@
-import React from "react";
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { Container } from "react-bootstrap";
+
+import './App.scss';
+
 
 import Header from "./components/Header";
 import Home from "./pages/Home";
-import { Container } from "react-bootstrap";
 
 function App() {
   return (
