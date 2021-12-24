@@ -14,15 +14,30 @@ const List = () => {
       <Row>
         <Col>
           <Card border="primary">
-            <Card.Header>Supply List</Card.Header>
+            <Card.Header>
+              <Card.Title>Supply List</Card.Title>
+            </Card.Header>
+
             <Card.Body>
               <ListGroup>
-                <ListGroupItem variant="primary">
-                  <SupplyItem />
-                </ListGroupItem>
-                <ListGroupItem variant="primary">
-                  <SupplyItem />
-                </ListGroupItem>
+                <Row>
+                  <Col>
+                    <ListGroupItem>
+                      <SupplyItem />
+                    </ListGroupItem>
+                    <ListGroupItem>
+                      <SupplyItem />
+                    </ListGroupItem>
+                  </Col>
+                  <Col>
+                    <ListGroupItem>
+                      <SupplyItem />
+                    </ListGroupItem>
+                    <ListGroupItem>
+                      <SupplyItem />
+                    </ListGroupItem>
+                  </Col>
+                </Row>
               </ListGroup>
             </Card.Body>
           </Card>
