@@ -9,7 +9,7 @@ const SupplyItem = () => {
   };
 
   return (
-    <Card>
+    <Card border="warning" className="mb-2"> 
       <Card.Header>
         <Card.Title>{testItem.name}</Card.Title>
       </Card.Header>

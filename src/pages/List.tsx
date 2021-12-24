@@ -19,26 +19,17 @@ const List = () => {
             </Card.Header>
 
             <Card.Body>
-              <ListGroup>
-                <Row>
-                  <Col>
-                    <ListGroupItem>
-                      <SupplyItem />
-                    </ListGroupItem>
-                    <ListGroupItem>
-                      <SupplyItem />
-                    </ListGroupItem>
-                  </Col>
-                  <Col>
-                    <ListGroupItem>
-                      <SupplyItem />
-                    </ListGroupItem>
-                    <ListGroupItem>
-                      <SupplyItem />
-                    </ListGroupItem>
-                  </Col>
-                </Row>
-              </ListGroup>
+              <Row>
+                <Col>
+                  <SupplyItem />
+                  <SupplyItem />
+                </Col>
+                <Col>
+                  <SupplyItem />
+                  <SupplyItem />
+                </Col>
+              </Row>
+              
             </Card.Body>
           </Card>
         </Col>
