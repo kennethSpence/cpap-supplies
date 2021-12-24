@@ -1,11 +1,4 @@
-import {
-  Card,
-  Container,
-  Row,
-  Col,
-  ListGroup,
-  ListGroupItem,
-} from "react-bootstrap";
+import { Card, Container, Row, Col } from "react-bootstrap";
 import SupplyItem from "../components/SupplyItem";
 
 const List = () => {
@@ -29,7 +22,6 @@ const List = () => {
                   <SupplyItem />
                 </Col>
               </Row>
-              
             </Card.Body>
           </Card>
         </Col>
