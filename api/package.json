@@ -5,14 +5,18 @@
   "description": "a Sails application",
   "keywords": [],
   "dependencies": {
-    "sails": "^1.5.0",
+    "@sailshq/connect-redis": "^3.2.1",
+    "@sailshq/lodash": "^3.10.3",
+    "@sailshq/socket.io-redis": "^5.2.0",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.4",
     "grunt": "1.0.4",
+    "sails": "^1.5.0",
     "sails-hook-grunt": "^5.0.0",
     "sails-hook-orm": "^4.0.0",
     "sails-hook-sockets": "^2.0.0",
-    "@sailshq/connect-redis": "^3.2.1",
-    "@sailshq/socket.io-redis": "^5.2.0",
-    "@sailshq/lodash": "^3.10.3"
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
   },
   "devDependencies": {
     "eslint": "5.16.0"
