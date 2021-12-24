@@ -1,6 +1,7 @@
 import { Card, Container, Button, Col, Row } from "react-bootstrap";
 
 const Home = () => {
+
   return (
     <Container fluid className="mt-3">
       <Row>
@@ -33,6 +34,9 @@ const Home = () => {
       </Row>
     </Container>
   );
+  
 };
+
+
 
 export default Home;
