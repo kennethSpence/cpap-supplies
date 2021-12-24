@@ -2,7 +2,7 @@ import { Card, Container, Button, Col, Row } from "react-bootstrap";
 
 const Home = () => {
   return (
-    <Container style={{paddingTop:'20px'}}>
+    <Container fluid className="mt-3">
       <Row>
         <Col>
           <Card border="primary">

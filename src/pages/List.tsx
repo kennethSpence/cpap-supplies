@@ -1,14 +1,32 @@
-import { Card, Container, Row } from "react-bootstrap";
+import {
+  Card,
+  Container,
+  Row,
+  Col,
+  ListGroup,
+  ListGroupItem,
+} from "react-bootstrap";
+import SupplyItem from "../components/SupplyItem";
 
 const List = () => {
   return (
-    <Container style={{paddingTop:'20px'}}>
+    <Container fluid className="mt-3">
       <Row>
-        <Card>
-            <Card.Header>
-                List
-            </Card.Header>
-        </Card>
+        <Col>
+          <Card border="primary">
+            <Card.Header>Supply List</Card.Header>
+            <Card.Body>
+              <ListGroup>
+                <ListGroupItem variant="primary">
+                  <SupplyItem />
+                </ListGroupItem>
+                <ListGroupItem variant="primary">
+                  <SupplyItem />
+                </ListGroupItem>
+              </ListGroup>
+            </Card.Body>
+          </Card>
+        </Col>
       </Row>
     </Container>
   );
