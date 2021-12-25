@@ -1,19 +1,23 @@
 import { Card } from "react-bootstrap";
 
-const User = () => {
-  const testItem = {
-    name: "Kenneth Spence",
-    email: "kenneth.spence@yahoo.com",
-  };
+interface userProps {
+    user: {
+        fullName: string,
+        email: string
+    }
+
+}
+
+const User = ({user}: userProps) => {
 
   return (
     <Card border="warning" className="mb-2"> 
       <Card.Header>
-        <Card.Title>{testItem.name}</Card.Title>
+        <Card.Title>{user.fullName}</Card.Title>
       </Card.Header>
       <Card.Body>
         <Card.Text>
-          Email: {testItem.email}
+          Email: {user.email}
         </Card.Text>
       </Card.Body>
     </Card>

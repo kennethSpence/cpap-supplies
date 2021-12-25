@@ -1,33 +1,54 @@
+import React from "react";
 import { Card, Container, Row, Col } from "react-bootstrap";
 import User from "../components/User";
+type MyProps = {};
+type MyState = { users: [{ fullName: string; emailAddress: string }] };
 
-const UserList = () => {
-  return (
-    <Container fluid className="mt-3">
-      <Row>
-        <Col>
-          <Card border="primary">
-            <Card.Header>
-              <Card.Title>User List</Card.Title>
-            </Card.Header>
+class UserList extends React.Component<MyProps, MyState> {
+  constructor(props: any) {
+    super(props);
+    this.state = {
+      users: [
+        { fullName: "Kenneth Spence", emailAddress: "kenneth.spence@yahoo.com" },
+      ],
+    };
+  }
 
-            <Card.Body>
-              <Row>
-                <Col>
-                  <User />
-                  <User />
-                </Col>
-                <Col>
-                  <User />
-                  <User />
-                </Col>
-              </Row>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-    </Container>
-  );
-};
+  componentDidMount() {
+    fetch("http://localhost:1337/user")
+      .then((res) => res.json())
+      .then((data) => {
+        this.setState({ users: data });
+      })
+      .catch(console.log);
+  }
+
+  render() {
+    return (
+      <Container fluid className="mt-3">
+        <Row>
+          <Col>
+            <Card border="primary">
+              <Card.Header>
+                <Card.Title>User List</Card.Title>
+              </Card.Header>
+
+              <Card.Body>
+                <Row>
+                  {this.state.users.map((user) => {
+                    return <User user={{
+                        fullName: user.fullName,
+                        email: user.emailAddress
+                    }}   />;
+                  })}
+                </Row>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+    );
+  }
+}
 
 export default UserList;
