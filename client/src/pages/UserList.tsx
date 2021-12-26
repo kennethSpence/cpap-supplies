@@ -15,12 +15,12 @@ class UserList extends React.Component<MyProps, MyState> {
   }
 
   componentDidMount() {
-    fetch("http://localhost:1337/user")
-      .then((res) => res.json())
-      .then((data) => {
-        this.setState({ users: data });
-      })
-      .catch(console.log);
+    // fetch("http://localhost:1337/user")
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     this.setState({ users: data });
+    //   })
+    //   .catch(console.log);
   }
 
   render() {
