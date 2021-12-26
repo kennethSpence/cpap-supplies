@@ -13,7 +13,7 @@
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
     emailAddress: {
-      type: 'string',
+      type: 'text',
       required: true,
       unique: true,
       isEmail: true,
@@ -22,7 +22,7 @@
     },
 
     password: {
-      type: 'string',
+      type: 'text',
       required: true,
       description: 'Securely hashed representation of the user\'s login password.',
       protect: true,
@@ -30,7 +30,7 @@
     },
 
     fullName: {
-      type: 'string',
+      type: 'text',
       required: true,
       description: 'Full representation of the user\'s name',
       maxLength: 120,

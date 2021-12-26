@@ -50,7 +50,9 @@ module.exports.datastores = {
     ***************************************************************************/
     // adapter: 'sails-mysql',
     // url: 'mysql://user:password@host:port/database',
-
+    adapter: 'sails-postgresql',
+    url: 'postgres://<user>:<password>@cpap-supply-postgres.postgres.database.azure.com:5432/cpap_supply',
+    ssl: true
   },
 
 
